@@ -10,5 +10,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		
 		CatanMapGeneratorService.start(this);
+		
+		setResult(RESULT_OK);
+		finish();
 	}
 }
